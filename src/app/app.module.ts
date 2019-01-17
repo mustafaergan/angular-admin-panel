@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
+import {NoopAnimationsModule} from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -11,6 +12,7 @@ import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
   ],
   imports: [
     BrowserModule,
+    NoopAnimationsModule,
     AppRoutingModule
   ],
   providers: [],
