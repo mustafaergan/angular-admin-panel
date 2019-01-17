@@ -5,7 +5,7 @@ import {LoginComponent} from './login/login.component';
 import {UserRoutingModule} from './user-routing.module';
 import {ThemeModule} from '../theme/theme.module';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
-import {UserService} from './service/user.service';
+import {UserService} from '../service/user.service';
 import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({

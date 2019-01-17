@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
-import {UserService} from '../service/user.service';
-import User from '../model/user';
+import {UserService} from '../../service/user.service';
+import User from '../../model/user';
 
 @Component({
   selector: 'app-signup',
@@ -15,7 +15,7 @@ export class SignupComponent implements OnInit {
   }
 
   onSubmit() {
-    this.userService.addUser(this.model);
+    this.userService.save(this.model);
   }
 
   ngOnInit() {

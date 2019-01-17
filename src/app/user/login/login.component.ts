@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import User from '../model/user';
-import {UserService} from '../service/user.service';
+import User from '../../model/user';
+import {UserService} from '../../service/user.service';
 
 @Component({
   selector: 'app-login',
@@ -15,7 +15,8 @@ export class LoginComponent implements OnInit {
   }
 
   onSubmit() {
-    this.userService.checkUser(this.model);
+    this.userService.findOne(1);
+    // this.userService.checkUser(this.model);
   }
 
   ngOnInit() {
